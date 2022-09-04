@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(116, 116, 116);
+}
+
+.item {
+    display: flex;
+    background-color: rgb(185, 185, 185);
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 400;
+    border-radius: 15px;
+}
+
+.item img {
+    width: 100%;
+}
+.item__img-wrapper {
+    width: 300px;
+    height: 300px;
+}
+.item__buttons {
+    padding-top: 20px;
+}
+.item__content-price {
+    padding-top: 20px;
+}
+.item__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.item__title {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.button {
+    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgb(136, 136, 136);
+    cursor: pointer;
+}
+.button:hover {
+    border: 1px solid rgb(26, 26, 26);
+    background-color: rgb(116, 116, 116);
+    color: #fff;
+}
+.item__butttons-counter {
+    padding: 0 10px;
+}
+.item__buy-now-btn{
+    display: inline-block;
+    border: 1px solid red;
+    background-color: red;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.item__buy-now-btn:hover{
+    background-color: #fff;
+
+    color: red;
+
+}
+.item__content{
+    align-items: center;
+}
