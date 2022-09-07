@@ -1,28 +1,55 @@
 import React from 'react';
-import Product from './Product/Product';
+import classes from '../Header/Header.module.css'
 // import s from '../Header/Header.module.css'
 
-const listProduct = [
-    { name: 'roll1', id: '1', price: '100',img:'../product-menu_1.jpg' },
-    { name: 'roll2', id: '2', price: '200',img:'../product-menu_2.jpg' },
-    { name: 'roll3', id: '3', price: '300',img:'../product-menu_1.jpg' },
-    { name: 'roll4', id: '4', price: '400',img:'../product-menu_2.jpg' },
 
-]
-
-const Header = () => {
-
-    let createListProduct = listProduct.map(e => (
-        <Product nameProdukt={e.name} priceProduct={e.price} img = {e.img}/>
-    ))
+let topMenu = () => {
 
 
     return (
+        <div className={classes.topMenu_active}>
+            <ul className={classes.topMenu__list}>
+                <li className={classes.topMenu__item}>Наборы</li>
+                <li className={classes.topMenu__item}>Наборы</li>
+                <li className={classes.topMenu__item}>Наборы</li>
+                <li className={classes.topMenu__item}>Наборы</li>
+            </ul>
+        </div>
+    )
+}
+
+function topMenuOn() {
+
+    return
+}
+
+const Header = () => {
+
+    return (
         <div>
-            <div className="container">
-                <div className="menu">
-                    {createListProduct}
+            <div className={classes.menu}>
+                <div className={classes.menu__wrapper}>
+                    <div onClick={topMenuOn} className={classes.menuTopBtn}>Меню</div>
+                    <div>Город</div>
+                    <div>+7(812) 999-99-99</div>
+                    <div>
+                        <a href="s#">Logo</a>
+                    </div>
+                    <div>Работа</div>
+                    <div>Акции</div>
+                    <div>Вход</div>
+                    <div>
+                        <a href="s#">Bucket</a>
+                    </div>
                 </div>
+            </div>
+            <div className={classes.topMenu_active}>
+                <ul className={classes.topMenu__list}>
+                    <li className={classes.topMenu__item}>Наборы</li>
+                    <li className={classes.topMenu__item}>Наборы</li>
+                    <li className={classes.topMenu__item}>Наборы</li>
+                    <li className={classes.topMenu__item}>Наборы</li>
+                </ul>
             </div>
         </div>
     )

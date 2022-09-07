@@ -1,6 +1,31 @@
-.text{
-    color: rgb(40, 21, 209);
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 500;
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 30px 10px;
+    background-color: #fff;
+}
+.menu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.topMenu {
+    position: fixed;
+    padding: 100px;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    max-width: 200px;
+    height: 1000vh;
+    background-color: #fff;
+}
+.topMenu_active{
+    display: none;
+}
+.menuTopBtn{
+    cursor: pointer;
 }
