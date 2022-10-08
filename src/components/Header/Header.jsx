@@ -5,7 +5,6 @@ import classes from '../Header/Header.module.css'
 
 let topMenu = () => {
 
-
     return (
         <div className={classes.topMenu_active}>
             <ul className={classes.topMenu__list}>
@@ -18,18 +17,13 @@ let topMenu = () => {
     )
 }
 
-function topMenuOn() {
-
-    return
-}
-
 const Header = () => {
 
     return (
         <div>
             <div className={classes.menu}>
                 <div className={classes.menu__wrapper}>
-                    <div onClick={topMenuOn} className={classes.menuTopBtn}>Меню</div>
+                    <div onClick={()=>(console.log('topmenu'))} className={classes.menuTopBtn}>Меню</div>
                     <div>Город</div>
                     <div>+7(812) 999-99-99</div>
                     <div>
